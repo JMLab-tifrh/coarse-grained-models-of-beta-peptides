@@ -1,0 +1,19 @@
+#include "./toppar/martini_v2.2refP.itp"
+#include "./toppar/martini_v2.0_POPE_02.itp"
+#include "./toppar/martini_v2.0_POPG_02.itp"
+#include "./toppar/nonGA_pep.itp"
+#include "./toppar/martini_v2.0_ions.itp"
+
+[ system ]
+; name
+POPE:POPG WITH 1 NON-GA in water
+
+[ molecules ]
+; name  number
+POPE           126
+POPG           42
+POPE           126
+POPG           42
+Protein         1
+PW          7381
+NA+              81

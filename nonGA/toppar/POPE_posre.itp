@@ -1,0 +1,15 @@
+; position restraints for T_PO4 of Protein in INSANE! Membrane UpperLeaflet>POPE:POPG=3.0:1.0 LowerLeaflet>POPE:POPG=3.0:1.0
+
+#ifdef STEP1
+#define fc 1000.0
+#endif
+#ifdef STEP2
+#define fc 1000.0
+#endif
+#ifdef STEP3
+#define fc 400.0
+#endif
+
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   2    1          0          0       fc

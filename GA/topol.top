@@ -1,0 +1,20 @@
+
+#include "toppar/martini_v2.2refP.itp"
+#include "toppar/martini_v2.0_POPE_02.itp"
+#include "toppar/martini_v2.0_POPG_02.itp"
+#include "toppar/ga_pep.itp"
+#include "toppar/martini_v2.0_ions.itp"
+
+[ system ]
+; Name
+Title in water
+
+[ molecules ]
+; Compound	#mols
+POPE            146
+POPG		 48
+POPE		146
+POPG             48
+Protein           1
+PW          7761
+NA+              92

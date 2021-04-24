@@ -1,0 +1,145 @@
+[ moleculetype ]
+; Name         Exclusions
+Protein          1
+
+[ atoms ]
+    1    Qd     1   TYR    BB     1  1.0000 ; C
+    2   SC4     1   TYR   SC1     2  0.0000 ; C
+    3   SC4     1   TYR   SC2     3  0.0000 ; C
+    4   SP1     1   TYR   SC3     4  0.0000 ; C
+    5   BN0     2   HCA    BB     5  0.0000 ; C
+    6   SC1     2   HCA   SC1     6  0.0000 ; C 
+    7   SC1     2   HCA   SC2     7  0.0000 ; C
+    8   BN0     3   HCA    BB     8  0.0000 ; S
+    9   SC1     3   HCA   SC1     9  0.0000 ; S
+   10   SC1     3   HCA   SC2    10  0.0000 ; S
+   11   BN0     4   LYS    BB    11  0.0000 ; S
+   12    C3     4   LYS   SC1    12  0.0000 ; S
+   13    Qd     4   LYS   SC2    13  1.0000 ; S
+   14   BN0     5   HCA    BB    14  0.0000 ; S
+   15   SC1     5   HCA   SC1    15  0.0000 ; S
+   16   SC1     5   HCA   SC2    16  0.0000 ; S
+   17   BN0     6   HCA    BB    17  0.0000 ; S
+   18   SC1     6   HCA   SC1    18  0.0000 ; S
+   19   SC1     6   HCA   SC2    19  0.0000 ; S
+   20   BN0     7   LYS    BB    20  0.0000 ; S
+   21    C3     7   LYS   SC1    21  0.0000 ; S
+   22    Qd     7   LYS   SC2    22  1.0000 ; S
+   23   BN0     8   HCA    BB    23  0.0000 ; S
+   24   SC1     8   HCA   SC1    24  0.0000 ; S
+   25   SC1     8   HCA   SC2    25  0.0000 ; S
+   26   BN0     9   HCA    BB    26  0.0000 ; C
+   27   SC1     9   HCA   SC1    27  0.0000 ; C
+   28   SC1     9   HCA   SC2    28  0.0000 ; C
+   29   BN0    10   LYS    BB    29  0.0000 ; C
+   30    C3    10   LYS   SC1    30  0.0000 ; C
+   31    Qd    10   LYS   SC2    31  1.0000 ; C
+
+[ bonds ]
+; Backbone bonds
+    1     5      1   0.40879  9000 ; TYR(C)-HCA(C)
+    5     8      1   0.34682  9000 ; HCA(C)-HCA(S)
+    8    11      1   0.33378  9000 ; HCA(S)-LYS(S)
+   11    14      1   0.33400  9000 ; LYS(S)-HCA(S)
+   14    17      1   0.32873  9000 ; HCA(S)-HCA(S)
+   17    20      1   0.33404  9000 ; HCA(S)-LYS(S)
+   20    23      1   0.33321  9000 ; LYS(S)-HCA(S)
+   23    26      1   0.34045  9000 ; HCA(S)-HCA(C)
+   26    29      1   0.38823  9000 ; HCA(C)-LYS(C)
+; Sidechain bonds
+    1     2      1   0.31934  5000 ; TYR
+    5     6      1   0.31181  5000 ; HCA
+    6     7      1   0.22333  5000 ; HCA
+    5     7      1   0.29387  5000 ; HCA
+    8     9      1   0.31187  5000 ; HCA
+    9    10      1   0.22334  5000 ; HCA
+    8    10      1   0.29518  5000 ; HCA
+   11    12      1   0.32064  5000 ; LYS
+   12    13      1   0.30715  5000 ; LYS
+   14    15      1   0.31133  5000 ; HCA
+   15    16      1   0.22349  5000 ; HCA
+   14    16      1   0.29312  5000 ; HCA
+   17    18      1   0.31152  5000 ; HCA
+   18    19      1   0.22338  5000 ; HCA
+   17    19      1   0.29447  5000 ; HCA
+   20    21      1   0.31675  5000 ; LYS
+   21    22      1   0.30734  5000 ; LYS
+   23    24      1   0.31119  5000 ; HCA
+   24    25      1   0.22331  5000 ; HCA
+   23    25      1   0.29365  5000 ; HCA
+   26    27      1   0.31217  5000 ; HCA
+   27    28      1   0.22325  5000 ; HCA
+   26    28      1   0.29560  5000 ; HCA
+   29    30      1   0.34437  5000 ; LYS
+   30    31      1   0.30582  5000 ; LYS
+
+[ constraints ]
+    2     3      1   0.27000 ; TYR
+    2     4      1   0.27000 ; TYR
+    3     4      1   0.27000 ; TYR
+
+[ angles ]
+; Backbone angles
+    1     5     8      2    90    350 ; TYR(C)-HCA(C)-HCA(S)
+    5     8    11      2    83    450 ; HCA(C)-HCA(S)-LYS(S)
+    8    11    14      2    80    350 ; HCA(S)-LYS(S)-HCA(S)
+   11    14    17      2    78    450 ; LYS(S)-HCA(S)-HCA(S)
+   14    17    20      2    81    450 ; HCA(S)-HCA(S)-LYS(S)
+   17    20    23      2    79    350 ; HCA(S)-LYS(S)-HCA(S)
+   20    23    26      2    82    450 ; LYS(S)-HCA(S)-HCA(C)
+   23    26    29      2    85    450 ; HCA(S)-HCA(C)-LYS(C)
+; Backbone-sidechain angles
+    2     1     5      2    140    30 ; TYR(C)-HCA(C) SBB
+    1     5     6      2    88     50 ; TYR(C)-HCA(C) SBB
+    5     8     9      2    90     40 ; HCA(C)-HCA(S) SBB
+    8    11    12      2    82     50 ; HCA(S)-LYS(S) SBB
+   11    14    15      2    90     50 ; LYS(S)-HCA(S) SBB
+   14    17    18      2    98     50 ; HCA(S)-HCA(S) SBB
+   17    20    21      2    82     50 ; HCA(S)-LYS(S) SBB
+   20    23    24      2    96     50 ; LYS(S)-HCA(S) SBB
+   23    26    27      2    98     50 ; HCA(S)-HCA(C) SBB
+   26    29    30      2    75     50 ; HCA(C)-LYS(C) SBB
+; Sidechain angles
+    1     2     3      2    105    70 ; TYR
+    1     2     4      2    122    80 ; TYR
+    5     6     7      2    64     80 ; HCA
+    8     9    10      2    64     80 ; HCA
+   11    12    13      2    166    70 ; LYS
+   14    15    16      2    64     80 ; HCA
+   17    18    19      2    64     80 ; HCA
+   20    21    22      2    170    50 ; LYS
+   23    24    25      2    64     80 ; HCA
+   26    27    28      2    64     80 ; HCA
+   29    30    31      2    168    50 ; LYS
+
+[ dihedrals ]
+; Backbone dihedrals
+    1     5     8     11     1     110   330 1
+    5     8     11    14     1     120   330 1
+    8     11    14    17     1     120   330 1
+    11    14    17    20     1     120   330 1
+    14    17    20    23     1     120   330 1
+    17    20    23    26     1     120   330 1
+    20    23    26    29     1     120   330 1
+; Sidechain improper dihedrals
+    1     3     4     2      2      0    50 ; TYR
+
+#ifdef REST_ON
+;#include "./POPE_posre.itp"
+;#include "./POPG_posre.itp"
+#ifndef POSRES_FC
+#define POSRES_FC 1000.00
+#endif
+ [ position_restraints ]
+      1    1    POSRES_FC    POSRES_FC    POSRES_FC
+      5    1    POSRES_FC    POSRES_FC    POSRES_FC
+      8    1    POSRES_FC    POSRES_FC    POSRES_FC
+     11    1    POSRES_FC    POSRES_FC    POSRES_FC
+     14    1    POSRES_FC    POSRES_FC    POSRES_FC
+     17    1    POSRES_FC    POSRES_FC    POSRES_FC
+     20    1    POSRES_FC    POSRES_FC    POSRES_FC
+     23    1    POSRES_FC    POSRES_FC    POSRES_FC
+     26    1    POSRES_FC    POSRES_FC    POSRES_FC
+     29    1    POSRES_FC    POSRES_FC    POSRES_FC
+#endif
+
