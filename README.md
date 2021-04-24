@@ -1,5 +1,5 @@
 # coarse-grained-models-of-beta-peptides
-Author list: Jagannath Mondal, Jaya Krishna Koneru, Dube Dheeraj Prakashchand, Namita Dube
+Author list:  Jaya Krishna Koneru, Dube Dheeraj Prakashchand, Namita Dube, Pushpita Ghosh and Jagannath Mondal
 
 
 Models of two sequence-isomers (GA and non-GA) of 10-residue beta-peptide Y-(ACHC-ACHC-K)3 are provided. 
